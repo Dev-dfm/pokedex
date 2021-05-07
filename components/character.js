@@ -22,3 +22,9 @@ export function createCharacterElement({ image, name }) {
     ],
   });
 }
+
+// "official-artwork": {
+//   "front_default":
+
+// "dream_world": {
+//   "front_default":

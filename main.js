@@ -4,6 +4,11 @@ import { createCharacterElement } from './components/character';
 import { getCharacters } from './utils/api';
 import { debounce } from './utils/timer';
 
+getCharacters('').then((characters) => {
+  const characterElements = characters.map(createCharacterElement);
+  cardContainer.append(...characterElements);
+});
+
 const cardContainer = createElement('section', {
   className: 'cards',
   innerText: 'Card-Container',
