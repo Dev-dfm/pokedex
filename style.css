@@ -29,3 +29,45 @@
 body {
   margin: 0;
 }
+
+.header {
+  background: rgb(178, 212, 204);
+  padding: 2em;
+  display: grid;
+  place-content: center;
+  margin-bottom: 3em;
+}
+
+.header__title {
+  font-size: 4em;
+}
+
+.header__searchField {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.header__searchField div {
+  background: rgb(68, 196, 157);
+  padding: 1em;
+  border-top-right-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+}
+
+.header__input {
+  width: 15em;
+  font-size: 1.4em;
+  padding-left: 1em;
+  border: none;
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+}
+
+.footer {
+  background: rgb(178, 212, 204);
+  padding: 2em;
+}
+
+.cards {
+  display: grid;
+}
