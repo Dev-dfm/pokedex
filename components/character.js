@@ -7,9 +7,9 @@ export function createCharacterElement({ name, url }) {
     children: [
       createElement('img', {
         className: 'character-card__image',
-        src: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${url.match(
+        src: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${url.match(
           /(\d+)(?!.*\d)/g
-        )}.png`,
+        )}.svg`,
       }),
       createElement('div', {
         className: 'character-card__info',
@@ -27,3 +27,6 @@ export function createCharacterElement({ name, url }) {
     ],
   });
 }
+
+// PNG FORMAT
+// https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/
