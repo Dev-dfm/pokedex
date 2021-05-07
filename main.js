@@ -1,6 +1,11 @@
 import './style.css';
 import { createElement } from './utils/elements';
 
+const cardContainer = createElement('section', {
+  className: 'cards',
+  innerText: 'Card-Container',
+});
+
 const mainElement = createElement('main', {
   className: 'main',
   children: [
@@ -22,10 +27,7 @@ const mainElement = createElement('main', {
         }),
       ],
     }),
-    createElement('section', {
-      className: 'cards',
-      innerText: 'Pokemon-Container',
-    }),
+    cardContainer,
     createElement('footer', {
       className: 'footer',
       innerText: 'GitHubLink & Created By Daniel Flores Medina',
