@@ -11,7 +11,6 @@ getCharacters('').then((characters) => {
 
 const cardContainer = createElement('section', {
   className: 'cards',
-  innerText: 'Card-Container',
 });
 
 const mainElement = createElement('main', {
@@ -21,33 +20,40 @@ const mainElement = createElement('main', {
       className: 'header',
       children: [
         createElement('h1', {
-          className: 'title',
+          className: 'header__title',
           innerText: 'PokeDex',
         }),
-        createElement('input', {
-          className: 'searchField',
-          placeholder: 'Search Pokemon',
-          autofocus: true,
-          oninput: debounce((event) => {
-            // clear all children per default
-            removeAllChildren(cardContainer);
-            // get the value from search input
-            const search = event.target.value;
-            // get API Data of searched characters
-            getCharacters(search).then((characters) => {
-              const characterElements = characters
-                .filter((character) =>
-                  character.name.toLowerCase().includes(search.toLowerCase())
-                )
-                .map(createCharacterElement);
-              // append cardContainer by searched characters
-              cardContainer.append(...characterElements);
-            });
-          }, 300),
-        }),
-        createElement('img', {
-          className: 'searchIcon',
-          src: '<i class="fas fa-search"></i>',
+        createElement('section', {
+          className: 'header__searchField',
+          children: [
+            createElement('input', {
+              className: 'header__input',
+              placeholder: 'Search Pokemon',
+              autofocus: true,
+              oninput: debounce((event) => {
+                // clear all children per default
+                removeAllChildren(cardContainer);
+                // get the value from search input
+                const search = event.target.value;
+                // get API Data of searched characters
+                getCharacters(search).then((characters) => {
+                  const characterElements = characters
+                    .filter((character) =>
+                      character.name
+                        .toLowerCase()
+                        .includes(search.toLowerCase())
+                    )
+                    .map(createCharacterElement);
+                  // append cardContainer by searched characters
+                  cardContainer.append(...characterElements);
+                });
+              }, 300),
+            }),
+            createElement('div', {
+              className: 'header__searchIcon',
+              innerHTML: '<i class="fas fa-search"></i>',
+            }),
+          ],
         }),
       ],
     }),
