@@ -3,3 +3,7 @@
 *::before {
   box-sizing: border-box;
 }
+
+.character-card__image {
+  background: red;
+}

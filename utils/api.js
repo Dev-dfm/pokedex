@@ -8,9 +8,3 @@ export async function getCharacters(name) {
   const data = await response.json();
   return data.results;
 }
-
-// "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
-
-// `https://pokeapi.co/api/v2/pokemon?limit=100&offset=200/?name=${name}`
-
-// https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png

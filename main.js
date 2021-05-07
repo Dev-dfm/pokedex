@@ -31,7 +31,7 @@ const mainElement = createElement('main', {
           oninput: debounce((event) => {
             // clear all children per default
             removeAllChildren(cardContainer);
-            // get the value from serch input
+            // get the value from search input
             const search = event.target.value;
             // get API Data of searched characters
             getCharacters(search).then((characters) => {
