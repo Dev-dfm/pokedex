@@ -68,6 +68,15 @@ body {
   padding: 2em;
 }
 
-.cards {
+/* .cards {
   display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+} */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5em;
+  align-items: center;
 }

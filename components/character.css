@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.character-card {
+  margin: 2em;
+}
+
 .character-card__name {
   text-transform: capitalize;
+}
+
+.character-card__image {
+  width: 10em;
 }
