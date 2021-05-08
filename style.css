@@ -35,13 +35,14 @@ body {
   top: 0;
   width: 100%;
   background: rgb(178, 212, 204);
-  padding: 2em;
   display: grid;
   place-content: center;
-  margin-bottom: 3em;
+  padding-bottom: 1em;
+  margin-bottom: 0;
 }
 
 .header__title {
+  margin: 0.3em;
   font-size: 4em;
 }
 
@@ -66,8 +67,16 @@ body {
   border-bottom-left-radius: 0.3em;
 }
 
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5em;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
   background: rgb(178, 212, 204);
@@ -79,10 +88,3 @@ body {
   grid-auto-flow: column;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 } */
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5em;
-  align-items: center;
-}

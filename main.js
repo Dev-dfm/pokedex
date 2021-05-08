@@ -10,7 +10,7 @@ getCharacters('').then((characters) => {
 });
 
 const cardContainer = createElement('section', {
-  className: 'cards',
+  className: 'cardContainer',
 });
 
 const mainElement = createElement('main', {
