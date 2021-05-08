@@ -19,9 +19,6 @@ export function createCharacterElement({ name, url }) {
               createElement('h2', {
                 innerText: name,
               }),
-              createElement('h2', {
-                // innerText: ${data.results.type},
-              }),
             ],
           }),
         ],

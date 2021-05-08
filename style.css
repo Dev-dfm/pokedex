@@ -68,15 +68,26 @@ body {
 }
 
 .cardContainer {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  gap: 5em;
+  column-gap: 10em;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  display: grid;
+
+  /* grid-auto-flow: column; */
+
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2em;
+  margin: 2em;
+  margin-bottom: 8em;
+
+  /* padding: 5em; */
 }
 
 .footer {
-  position: sticky;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background: rgb(178, 212, 204);
