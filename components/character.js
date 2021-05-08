@@ -33,3 +33,11 @@ export function createCharacterElement({ name, url }) {
 
 // SVG FORMAT
 // https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/
+
+// https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world.front_default/
+
+// pokemon.sprites.other.dream-world.front_default
+
+//`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${url.match(
+// /(\d+)(?!.*\d)/g
+// )}.svg`,
