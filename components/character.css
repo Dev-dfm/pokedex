@@ -4,6 +4,31 @@
   box-sizing: border-box;
 }
 
+.character-card {
+  /* background: white; */
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2em;
+
+  /* margin: 2em; */
+  border-radius: 2em;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.character-card:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+  background-image: linear-gradient(
+    0deg,
+    rgba(178, 212, 204, 0.7),
+    transparent
+  );
+}
+
 .character-card__name {
   text-transform: capitalize;
+}
+
+.character-card__image {
+  height: 10em;
+  width: 10em;
 }

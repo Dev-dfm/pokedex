@@ -20,7 +20,7 @@
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -31,14 +31,19 @@ body {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  width: 100%;
   background: rgb(178, 212, 204);
-  padding: 2em;
   display: grid;
   place-content: center;
-  margin-bottom: 3em;
+  padding-bottom: 1em;
+  margin-bottom: 0;
+  z-index: 2;
 }
 
 .header__title {
+  margin: 0.3em;
   font-size: 4em;
 }
 
@@ -63,11 +68,35 @@ body {
   border-bottom-left-radius: 0.3em;
 }
 
+.cardContainer {
+  /* display: flex;
+  flex-wrap: wrap;
+  column-gap: 10em;
+  align-items: center;
+  justify-content: center; */
+  display: grid;
+
+  /* grid-auto-flow: column; */
+
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2em;
+  margin: 2em;
+  margin-bottom: 8em;
+
+  /* padding: 5em; */
+}
+
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background: rgb(178, 212, 204);
   padding: 2em;
 }
 
-.cards {
+/* .cards {
   display: grid;
-}
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+} */
