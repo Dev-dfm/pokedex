@@ -22,4 +22,10 @@ const mainElement = createElement('main', {
   children: [characterSection],
 });
 
+characterSection.addEventListener('mousemove', (e) => {
+  let x = (window.innerWidth / 2 - e.pageX) / 25;
+  let y = (window.innerHeight / 2 - e.pageY) / 25;
+  styles['character-card'].transform = `rotateY(${y}deg) rotateY(${x}deg)`;
+});
+
 document.querySelector('#app').append(mainElement);
