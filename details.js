@@ -1,5 +1,6 @@
 import './style.css';
 import styles from './details.module.css';
+// import styles from './components/characterDetails.module.css';
 import { createElement } from './utils/elements';
 import { getCharacter } from './utils/api';
 import { createCharacterDetails } from './components/characterDetails';
@@ -22,10 +23,15 @@ const mainElement = createElement('main', {
   children: [characterSection],
 });
 
-characterSection.addEventListener('mousemove', (e) => {
-  let x = (window.innerWidth / 2 - e.pageX) / 25;
-  let y = (window.innerHeight / 2 - e.pageY) / 25;
-  styles['character-card'].transform = `rotateY(${y}deg) rotateY(${x}deg)`;
-});
+// const card = document.querySelector(".characterCard");
+// const card = document.getElementsByClassName(styles['characterCard'])
+// console.log(card);
+
+// characterSection.addEventListener('mousemove', (e) => {
+//   let x = (window.innerWidth / 2  - e.pageX) / 25;
+//   let y = (window.innerHeight / 2 - e.pageY) / 25;
+//   characterSection.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`
+// });
+// characterCard.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`
 
 document.querySelector('#app').append(mainElement);

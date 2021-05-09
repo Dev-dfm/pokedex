@@ -3,26 +3,3 @@
 *::before {
   box-sizing: border-box;
 }
-
-:root {
-  /* Colors */
-  --primary-color: #b1ede8;
-  --secondary-color: #83c5be;
-  --text-color: #fffcf9;
-  --background-color: #2d5261;
-  --secondary-background-color: #1b6466;
-
-  /* Border */
-  --border-radius: 0.5rem;
-
-  /* Misc */
-  --transition-delay: 0.2s;
-}
-
-body {
-  /* background: rgba(0, 0, 0, 0.562); */
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

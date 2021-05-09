@@ -13,21 +13,39 @@ html {
   color: var(--text-color);
 }
 
-.character-card {
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background: var(--text-color); */
+
+  /* background: radial-gradient(circle, hsla(120, 93%, 84%, 0.4) 0%, hsla(185, 90%, 51%, 0.4) 100%); */
+}
+
+.characterCard {
   height: 50em;
   width: 30em;
   border-radius: 2em;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
   position: relative;
+  background: linear-gradient(to top, rgba(67, 153, 175, 0.7), transparent);
 }
 
 .character-card__image {
-  padding: 4em 0;
   width: 15em;
+  height: 20em;
+  transform: translateY(-150px);
 }
 
 .character-card__info {
   display: grid;
+}
+
+.character-card__name {
+  text-transform: capitalize;
+  font-size: 1.9em;
 }
 
 .character-card__primaryStats {
@@ -39,7 +57,6 @@ html {
 .character-card__secondaryStats {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background: lightblue;
   border-radius: 0 0 2em 2em;
   position: absolute;
   width: 100%;
@@ -61,8 +78,4 @@ html {
 .character-card__weightValue,
 .character-card__heightValue {
   font-size: 0.8em;
-}
-
-.character-card__name {
-  text-transform: capitalize;
 }

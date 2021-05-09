@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: #406163;
+}
+
 a {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
 }
 
 .character-card {
