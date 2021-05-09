@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .character-card {
-  /* background: white; */
   background: rgba(255, 255, 255, 0.1);
   padding: 2em;
-
-  /* margin: 2em; */
   border-radius: 2em;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.2);
 }

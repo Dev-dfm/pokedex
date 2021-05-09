@@ -69,22 +69,11 @@ body {
 }
 
 .cardContainer {
-  /* display: flex;
-  flex-wrap: wrap;
-  column-gap: 10em;
-  align-items: center;
-  justify-content: center; */
   display: grid;
-
-  /* grid-auto-flow: column; */
-
-  /* grid-template-columns: repeat(5, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2em;
-  margin: 2em;
-  margin-bottom: 8em;
-
-  /* padding: 5em; */
+  padding: 2em;
+  padding-bottom: 8em;
 }
 
 .footer {
@@ -94,9 +83,3 @@ body {
   background: rgb(178, 212, 204);
   padding: 2em;
 }
-
-/* .cards {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-} */
