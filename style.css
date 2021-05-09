@@ -6,6 +6,7 @@
 
 :root {
   --text-color: #406163;
+  --background-color: rgb(178, 212, 204);
 }
 
 #app {
@@ -43,10 +44,12 @@ body {
 }
 
 .header__searchField div {
-  background: rgb(68, 196, 157);
+  background: white;
+
+  /* background: rgb(68, 196, 157); */
   padding: 1em;
-  border-top-right-radius: 0.3em;
-  border-bottom-right-radius: 0.3em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
 }
 
 .header__input {
@@ -54,8 +57,9 @@ body {
   font-size: 1.4em;
   padding-left: 1em;
   border: none;
-  border-top-left-radius: 0.3em;
-  border-bottom-left-radius: 0.3em;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  outline: ;
 }
 
 .cardContainer {
@@ -70,6 +74,6 @@ body {
   position: relative;
   bottom: 0;
   width: 100%;
-  background: rgb(178, 212, 204);
+  background: var(--background-color);
   padding: 2em;
 }
