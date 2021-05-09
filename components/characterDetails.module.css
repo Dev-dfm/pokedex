@@ -3,3 +3,63 @@
 *::before {
   box-sizing: border-box;
 }
+
+:root {
+  --text-color: #406163;
+}
+
+html {
+  font-size: 112.5%;
+  color: var(--text-color);
+}
+
+.character-card {
+  height: 60em;
+  width: 40em;
+  border-radius: 2em;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.character-card__image {
+  padding: 8em 0;
+}
+
+.character-card__info {
+  display: grid;
+}
+
+.character-card__primaryStats {
+  margin-top: 9em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.character-card__secondaryStats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: lightblue;
+  border-radius: 0 0 2em 2em;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 2em 0;
+}
+
+.character-card__weight {
+  border-left: 0.1em solid;
+  border-right: 0.1em solid;
+}
+
+.character-card__typeText,
+.character-card__weightText,
+.character-card__heightText,
+.character-card__attackText,
+.character-card__hpText,
+.character-card__defenseText {
+  font-size: 0.8em;
+}
+
+.character-card__name {
+  text-transform: capitalize;
+}

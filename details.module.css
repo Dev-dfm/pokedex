@@ -18,3 +18,11 @@
   /* Misc */
   --transition-delay: 0.2s;
 }
+
+body {
+  /* background: rgba(0, 0, 0, 0.562); */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
