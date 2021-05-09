@@ -5,18 +5,7 @@
 }
 
 :root {
-  /* Colors */
-  --primary-color: #b1ede8;
-  --secondary-color: #83c5be;
-  --text-color: #fffcf9;
-  --background-color: #2d5261;
-  --secondary-background-color: #1b6466;
-
-  /* Border */
-  --border-radius: 0.5rem;
-
-  /* Misc */
-  --transition-delay: 0.2s;
+  --text-color: #406163;
 }
 
 #app {
@@ -28,13 +17,14 @@
 
 body {
   margin: 0;
+  color: var(--text-color);
 }
 
 .header {
   position: sticky;
   top: 0;
   width: 100%;
-  background: rgb(178, 212, 204);
+  background: linear-gradient(to bottom, rgb(178, 212, 204), transparent);
   display: grid;
   place-content: center;
   padding-bottom: 1em;
@@ -77,7 +67,7 @@ body {
 }
 
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   background: rgb(178, 212, 204);
