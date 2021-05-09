@@ -59,7 +59,10 @@ body {
   border: none;
   border-top-left-radius: 2em;
   border-bottom-left-radius: 2em;
-  outline: ;
+}
+
+.header__input:focus {
+  outline: 0.05em solid var(--background-color);
 }
 
 .cardContainer {
