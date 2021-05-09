@@ -4,9 +4,9 @@ import { createElement } from '../utils/elements';
 export function createCharacterDetails({
   id,
   name,
-  types,
-  weight,
-  height,
+  // types,
+  // weight,
+  // height,
   stats,
 }) {
   return createElement('div', {
@@ -30,50 +30,50 @@ export function createCharacterDetails({
           createElement('div', {
             className: styles['character-card__line'],
           }),
-          createElement('section', {
-            className: styles['character-card__primaryStats'],
-            children: [
-              createElement('div', {
-                className: styles['character-card__type'],
-                children: [
-                  createElement('p', {
-                    className: styles['character-card__typeText'],
-                    innerText: 'Type',
-                  }),
-                  createElement('p', {
-                    className: styles['character-card__typeValue'],
-                    innerText: `${types[0].type.name} / ${types[1].type.name}`,
-                  }),
-                ],
-              }),
-              createElement('div', {
-                className: styles['character-card__weight'],
-                children: [
-                  createElement('p', {
-                    className: styles['character-card__weightText'],
-                    innerText: 'Weight',
-                  }),
-                  createElement('p', {
-                    className: styles['character-card__weightValue'],
-                    innerText: weight,
-                  }),
-                ],
-              }),
-              createElement('div', {
-                className: styles['character-card__height'],
-                children: [
-                  createElement('p', {
-                    className: styles['character-card__heightText'],
-                    innerText: 'Height',
-                  }),
-                  createElement('p', {
-                    className: styles['character-card__heightValue'],
-                    innerText: height,
-                  }),
-                ],
-              }),
-            ],
-          }),
+          // createElement('section', {
+          //   className: styles['character-card__primaryStats'],
+          //   children: [
+          //     createElement('div', {
+          //       className: styles['character-card__type'],
+          //       children: [
+          //         createElement('p', {
+          //           className: styles['character-card__typeText'],
+          //           innerText: 'Type',
+          //         }),
+          //         createElement('p', {
+          //           className: styles['character-card__typeValue'],
+          //           innerText: `${types[0].type.name} / ${types[1].type.name}`,
+          //         }),
+          //       ],
+          //     }),
+          //     createElement('div', {
+          //       className: styles['character-card__weight'],
+          //       children: [
+          //         createElement('p', {
+          //           className: styles['character-card__weightText'],
+          //           innerText: 'Weight',
+          //         }),
+          //         createElement('p', {
+          //           className: styles['character-card__weightValue'],
+          //           innerText: weight,
+          //         }),
+          //       ],
+          //     }),
+          //     createElement('div', {
+          //       className: styles['character-card__height'],
+          //       children: [
+          //         createElement('p', {
+          //           className: styles['character-card__heightText'],
+          //           innerText: 'Height',
+          //         }),
+          //         createElement('p', {
+          //           className: styles['character-card__heightValue'],
+          //           innerText: height,
+          //         }),
+          //       ],
+          //     }),
+          //   ],
+          // }),
         ],
       }),
       createElement('section', {
