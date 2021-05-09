@@ -5,7 +5,7 @@ export function createCharacterElement({ name, url }) {
   const pokemonId = url.match(/(\d+)(?!.*\d)/g);
   return createElement('a', {
     className: 'character-link',
-    href: `/details.html?id=1`,
+    href: `/details.html?id=${pokemonId}`,
     children: [
       createElement('div', {
         className: 'character-card',
