@@ -21,5 +21,6 @@ export async function getCharacter(pokemonId) {
     return {};
   }
   const data = await response.json();
+  console.log(data);
   return data;
 }

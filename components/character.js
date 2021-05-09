@@ -24,7 +24,7 @@ export function createCharacterElement({ name, url }) {
                     innerText: name,
                   }),
                   createElement('h2', {
-                    innerText: `#${pokemonId}`,
+                    innerText: '#' + `${pokemonId}`.toString().padStart(3, '0'),
                   }),
                 ],
               }),
