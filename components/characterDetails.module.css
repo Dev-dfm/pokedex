@@ -23,6 +23,7 @@ html {
 
 .character-card__image {
   padding: 4em 0;
+  width: 15em;
 }
 
 .character-card__info {
