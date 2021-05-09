@@ -120,11 +120,7 @@ export function createCharacterDetails({
           }),
         ],
       }),
+      // console.log(styles['character-card']),
     ],
   });
 }
-
-// createElement('', {
-//     className: styles[''],
-//     src: ``,
-//   }),

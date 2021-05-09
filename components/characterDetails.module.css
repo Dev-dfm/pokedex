@@ -14,15 +14,15 @@ html {
 }
 
 .character-card {
-  height: 60em;
-  width: 40em;
+  height: 50em;
+  width: 30em;
   border-radius: 2em;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
   position: relative;
 }
 
 .character-card__image {
-  padding: 8em 0;
+  padding: 4em 0;
 }
 
 .character-card__info {
@@ -30,8 +30,8 @@ html {
 }
 
 .character-card__primaryStats {
-  margin-top: 9em;
-  display: grid;
+  margin-top: 7.5em;
+  display: none;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -56,7 +56,9 @@ html {
 .character-card__heightText,
 .character-card__attackText,
 .character-card__hpText,
-.character-card__defenseText {
+.character-card__defenseText .character-card__typeValue,
+.character-card__weightValue,
+.character-card__heightValue {
   font-size: 0.8em;
 }
 
