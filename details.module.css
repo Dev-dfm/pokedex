@@ -1,5 +1,4 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
+.characterSection {
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }

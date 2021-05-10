@@ -28,7 +28,7 @@ const mainElement = createElement('main', {
           children: [
             createElement('input', {
               className: 'header__input',
-              placeholder: 'Search Pokemon',
+              placeholder: 'Catch Them All',
               autofocus: true,
               oninput: debounce((event) => {
                 // clear all children per default
@@ -41,7 +41,7 @@ const mainElement = createElement('main', {
                     .filter((character) =>
                       character.name
                         .toLowerCase()
-                        .includes(search.toLowerCase())
+                        .startsWith(search.toLowerCase())
                     )
                     .map(createCharacterElement);
                   // append cardContainer by searched characters

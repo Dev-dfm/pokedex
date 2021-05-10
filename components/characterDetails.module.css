@@ -15,16 +15,13 @@ html {
 
 .container {
   height: 100vh;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
-
-  /* background: var(--text-color); */
-
-  /* background: radial-gradient(circle, hsla(120, 93%, 84%, 0.4) 0%, hsla(185, 90%, 51%, 0.4) 100%); */
 }
 
 .characterCard {
+  margin-top: 6em;
   height: 50em;
   width: 30em;
   border-radius: 2em;
