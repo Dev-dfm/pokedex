@@ -23,15 +23,18 @@ const mainElement = createElement('main', {
   children: [characterSection],
 });
 
-// const card = document.querySelector(".characterCard");
+// const card = document.querySelectorAll(".characterCard");
+// const card = document.querySelectorAll(".characterCard");
 // const card = document.getElementsByClassName(styles['characterCard'])
 // console.log(card);
 
-// characterSection.addEventListener('mousemove', (e) => {
-//   let x = (window.innerWidth / 2  - e.pageX) / 25;
-//   let y = (window.innerHeight / 2 - e.pageY) / 25;
-//   characterSection.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`
-// });
-// characterCard.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`
+characterSection.addEventListener('mousemove', (e) => {
+  // let x = (window.innerWidth / 2  - e.pageX) / 25;
+  // let y = (window.innerHeight / 2 - e.pageY) / 25;
+  // characterSection.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`});
+  // characterCard.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`});
+  // card.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`});
+  console.log(e.pageX);
+});
 
 document.querySelector('#app').append(mainElement);

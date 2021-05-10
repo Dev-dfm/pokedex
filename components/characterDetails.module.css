@@ -15,7 +15,7 @@ html {
 
 .container {
   height: 100vh;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 
@@ -25,6 +25,7 @@ html {
 }
 
 .characterCard {
+  margin-top: 6em;
   height: 50em;
   width: 30em;
   border-radius: 2em;
