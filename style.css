@@ -45,8 +45,6 @@ body {
 
 .header__searchField div {
   background: white;
-
-  /* background: rgb(68, 196, 157); */
   padding: 1em;
   border-top-right-radius: 2em;
   border-bottom-right-radius: 2em;

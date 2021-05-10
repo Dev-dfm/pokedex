@@ -16,7 +16,6 @@ export async function getCharacters(name) {
 export async function getCharacter(pokemonId) {
   const promise = fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`);
   const response = await promise;
-  // if input not found, give an empty array instead of an error 404
   if (response.status === 404) {
     return {};
   }

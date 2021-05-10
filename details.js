@@ -1,6 +1,5 @@
 import './style.css';
 import styles from './details.module.css';
-// import styles from './components/characterDetails.module.css';
 import { createElement } from './utils/elements';
 import { getCharacter } from './utils/api';
 import { createCharacterDetails } from './components/characterDetails';
@@ -20,7 +19,7 @@ getCharacter(pokemonId).then((response) => {
   characterSection.addEventListener('mousemove', (e) => {
     let x = (window.innerWidth / 2 - e.pageX) / 25;
     let y = (window.innerHeight / 2 - e.pageY) / 25;
-    characterDetails.style.transform = `rotateY(${y}deg) rotateX(${x}deg)`;
+    characterDetails.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
   });
 });
 
@@ -30,16 +29,5 @@ const mainElement = createElement('main', {
   className: styles.main,
   children: [characterSection],
 });
-
-// const card = document.querySelectorAll(".characterCard");
-// const card = document.querySelectorAll(".characterCard");
-// const card = document.getElementsByClassName(styles['characterCard'])
-// console.log(card);
-
-// characterCard.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`});
-// card.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`});
-
-//   console.log(e.pageX);
-// });
 
 document.querySelector('#app').append(mainElement);
