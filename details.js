@@ -16,7 +16,9 @@ const characterSection = createElement('section', {
 getCharacter(pokemonId).then((response) => {
   const characterDetails = createCharacterDetails(response);
   characterSection.append(characterDetails);
+  // return characterDetails;
 });
+console.log(characterSection);
 
 const mainElement = createElement('main', {
   className: styles.main,
@@ -28,13 +30,15 @@ const mainElement = createElement('main', {
 // const card = document.getElementsByClassName(styles['characterCard'])
 // console.log(card);
 
-characterSection.addEventListener('mousemove', (e) => {
-  // let x = (window.innerWidth / 2  - e.pageX) / 25;
-  // let y = (window.innerHeight / 2 - e.pageY) / 25;
-  // characterSection.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`});
-  // characterCard.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`});
-  // card.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`});
-  console.log(e.pageX);
-});
+// characterSection.addEventListener('mousemove', (e) => {
+// let x = (window.innerWidth / 2  - e.pageX) / 25;
+// let y = (window.innerHeight / 2 - e.pageY) / 25;
+// characterSection.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`});
+
+// characterCard.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`});
+// card.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`});
+
+//   console.log(e.pageX);
+// });
 
 document.querySelector('#app').append(mainElement);
