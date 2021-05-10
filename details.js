@@ -10,14 +10,20 @@ const params = new URLSearchParams(location.search);
 const pokemonId = params.get('id');
 
 const characterSection = createElement('section', {
-  className: 'characterSection',
+  className: styles.characterSection,
 });
 
 getCharacter(pokemonId).then((response) => {
   const characterDetails = createCharacterDetails(response);
   characterSection.append(characterDetails);
   // return characterDetails;
+  characterSection.addEventListener('mousemove', (e) => {
+    let x = (window.innerWidth / 2 - e.pageX) / 25;
+    let y = (window.innerHeight / 2 - e.pageY) / 25;
+    characterDetails.style.transform = `rotateY(${y}deg) rotateX(${x}deg)`;
+  });
 });
+
 console.log(characterSection);
 
 const mainElement = createElement('main', {
@@ -29,11 +35,6 @@ const mainElement = createElement('main', {
 // const card = document.querySelectorAll(".characterCard");
 // const card = document.getElementsByClassName(styles['characterCard'])
 // console.log(card);
-
-// characterSection.addEventListener('mousemove', (e) => {
-// let x = (window.innerWidth / 2  - e.pageX) / 25;
-// let y = (window.innerHeight / 2 - e.pageY) / 25;
-// characterSection.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`});
 
 // characterCard.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`});
 // card.style.transform = `rotateY(${y}deg) rotateY(${x}deg)`});
